@@ -4,8 +4,6 @@ services:
   frontend:
     container_name: web-server
     build: ./frontend
-    networks:
-      - backend
     restart:
       on-failure
     ports:
@@ -15,8 +13,7 @@ services:
     container_name: api
     build: ./backend
     networks:
-      - backend
-      - db
+      - api-db
     env_file:
       - ./.env
     restart:
@@ -30,7 +27,7 @@ services:
     container_name: database
     image: postgres:12
     networks:
-      - db
+      - api-db
     env_file:
       - ./.env
     restart:
@@ -42,5 +39,4 @@ volumes:
   pg_data:
 
 networks:
-  backend: {}
-  db: {}
+  api-db: {}
