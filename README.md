@@ -1,3 +1,5 @@
 # Докеризация приложения
 
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+- IP адрес 51.250.104.159
+- Frontend https://kupipodari.ruslanyar.nomoredomainsclub.ru
+- Backend https://api.kupipodari.ruslanyar.nomoredomainsclub.ru
