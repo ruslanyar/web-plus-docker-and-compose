@@ -1,5 +1,5 @@
 const { protocol } = window.location;
-export const URL = `${protocol}://api.kupipodari.ruslanyar.nomoredomainsclub.ru`;
+export const URL = `${protocol}//api.kupipodari.ruslanyar.nomoredomainsclub.ru`;
 
 export const MINIMUM_PASSWORD_LENGTH = 3;
 export const MINIMUM_USERNAME_LENGTH = 3;
