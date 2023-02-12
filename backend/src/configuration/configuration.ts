@@ -20,5 +20,5 @@ export default () => ({
 
   saltRound: parseInt(process.env.SALT, 10) || 10,
   secretKey: process.env.JWT_SECRET || 'secret-key',
-  allowList: process.env.ALLOW_LIST.split(', ') || '*',
+  allowList: process.env.ALLOW_LIST ? process.env.ALLOW_LIST.split(', ') : '*',
 });
